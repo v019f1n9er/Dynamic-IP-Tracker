@@ -15,7 +15,7 @@ Dynamic-IP-Tracker - это скрипт для маршрутизаторов M
 2. Получите ваш chatId:
     - Напишите сообщение вашему боту.
     - Используйте API Telegram для получения вашего chatId, отправив запрос:
-    - ```https://api.telegram.org/bot<telegramToken>/getUpdates```
+      ```https://api.telegram.org/bot<telegramToken>/getUpdates```
     - Найдите ваш chatId в ответе.
 3. Замените значения в скрипте:
     - Вставьте ваш telegramToken и chatId в соответствующие переменные.
