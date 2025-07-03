@@ -18,6 +18,9 @@
 :if ($currentIP != $previousIP) do={
     :global newIPMessage ("New public IP: " . $currentIP)
     :put [$sendTelegramMessage varName="newIPMessage"]
+
+    /ip firewall nat set [find comment="test"] dst-address=$currentIP
+
     :set previousIP $currentIP
 } else={
     :log info "IP has not changed or is empty"
